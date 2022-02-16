@@ -16,7 +16,7 @@ body {
 
 .player video{
     inline-size: 100%;
-    margin-block-start: 100px;
+    /* margin-block-start: 100px; */
     aspect-ratio: 16/9;
     vertical-align: middle;
     object-fit: cover;
@@ -48,7 +48,7 @@ body {
     inset-block-end: 0;
     inset-inline: 0;
     display: flex;
-    padding: 5px;
+    padding: 10px;
 }
 .player-progress input{
     flex: 1;

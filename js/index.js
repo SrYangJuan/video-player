@@ -25,31 +25,30 @@
 
         function handleBackward() {
             $video.currentTime -= 10
-            console.log('le diste click al button de atrasar 10sg', $video.currentTime) }
+            console.log('para atrás 10 segundos', $video.currentTime) }
 
-        function handleForward() {
-            $video.currentTime = $video.currentTime + 10
-            console.log('le diste click al button de adelantar 10sg', $video.currentTime) }
-
-
-            const $progress = document.querySelector('#progress')
-            $video.addEventListener('loadedmetadata', handleLoaded)
-            $video.addEventListener('timeupdate', handleTimeUpdate)
-
-            function handleLoaded () {
-               $progress.max = $video.dduration
-                console.log ('ha carrgado mi video', $video.duration)
-             }
-
-             function handleTimeUpdate(){
-                 $progress.value = $video.currentTime
-                //  console.log(' tiempo actual ', $video.currentTime)
-             }
-
-        $progress.addEventListener('input', handleInput)
-
-        function handleInput() {
-            $video.currentTime = $progress.value
-            console.log($progress.value)
-
-        }
+            function handleforward() {
+                $video.currentTime += 10;
+                console.log('para adelante 10 segundos', $video.currentTime);
+              }
+              
+              const $progress = document.querySelector("#progress");
+              $video.addEventListener("loadedmetadata", handleloaded);
+              $video.addEventListener("timeupdate", handletimeupdate);
+              
+              function handleloaded() {
+                $progress.max = $video.duration;
+                console.log("ha cargado mi video", $video.duration);
+              }
+              
+              function handletimeupdate() {
+                $progress.value = $video.currentTime;
+                //console.log("tiempo actual", $video.currentTime)//;
+              }
+              
+              $progress.addEventListener("input", handleinput);
+              
+              function handleinput() {
+                $video.currentTime = $progress.value;
+                console.log($progress.value);
+              }

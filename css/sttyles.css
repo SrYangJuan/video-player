@@ -1,7 +1,7 @@
 @import  './buttons.css';
 
 body {
-    background-color: skyblue ;
+    background-color: rgb(63, 3, 3) ;
     font-family: Arial, Helvetica, sans-serif;
 }
 .wrapper {

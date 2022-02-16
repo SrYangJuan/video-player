@@ -25,9 +25,10 @@ body {
 .player-title {
  color: white;
  position: absolute;
- inset-block-start: 0;
- margin: 0%;
+ inset-block-start: 0px;
+ /* margin: 0%; */
  inset-inline-start: 20px;
+ 
 }
 
 .player-actions {
@@ -47,7 +48,7 @@ body {
     inset-block-end: 0;
     inset-inline: 0;
     display: flex;
-    padding: 10px;
+    padding: 5px;
 }
 .player-progress input{
     flex: 1;
